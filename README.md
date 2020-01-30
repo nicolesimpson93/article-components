@@ -27,11 +27,16 @@ window.addEventListener('scroll', event => {
 2. Ensure the scrollable part of the document is greater than the height of the window. If not, the progress bar should not be shown to the user at all
 - Buffer
 
-### Advanced (optional):
+### Advanced
+
+#### A) Improved UI
 1. Modify the `.progress-bar` to be an outer `<div>` with class `.bar` and an inner `<div>` with class `.progress`
 2. The `.bar` should be the full width and have a translucent `background-color` to always be present
    1. When hovered, the bar's `background-color` should become fully opaque
 3. The `.progress` should be
+
+#### B) Scalable and Portable
+- Write the bar as an Object, create the elements using Javascript
 
 Part 3: Word count
 
