@@ -13,3 +13,17 @@ window.addEventListener('scroll', event => {
   console.log(winH, winW, docH, docW, scrY, scrX);
 
 })
+
+
+window.addEventListener('scroll', event => { 
+  
+  let windowH = document.documentElement.clientHeight
+  let windowW = document.documentElement.clientWidth
+​
+  let documentH = document.documentElement.scrollHeight
+  let documentW = document.documentElement.scrollWidth
+​
+  let scrolledPxY = window.scrollY
+  let scrolledPxX = window.scrollX
+​
+})
