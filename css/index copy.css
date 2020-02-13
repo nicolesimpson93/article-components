@@ -1,0 +1,26 @@
+body {
+  font: 1em helvetica, arial, sans-serif;
+  background-color: #fff;
+  color: #222;
+  padding-top: 1em;
+}
+
+.story {
+  padding: 0 1em;
+  margin: 1em 0;
+}
+
+.bar{
+  background-color: #aaa;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 1em;
+  width: 100%;
+}
+
+.progress{
+  background-color: limegreen;
+  width: 40%;
+  height: 100%;
+}
