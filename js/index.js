@@ -18,15 +18,20 @@ $bar.stlye.display = `none`
 $bar.stlye.display = `block`
 
 //If the $doc height < $win height...
+if (docH <= winH){ console.log(No progress bar needed)}
+else{ console.log(`Put a progress bar`)}
 
 //Store hwo much HAS been scrolled 
+let hasBeenScrolled = window.scrollY
 
 //Store how much CAN be scrolled
+let canBeScrolled = docH - winH
 
 //Calculater the  % scrolled of avilable 
+let percentageScrolled = hasBeenScrolled / canBeScrolled
 
 //Apply a % of the $bar width 
-
+$bar.style.width = `${percentageScrolled * 100}%`
 //Capture the scroll of the window
 
 
