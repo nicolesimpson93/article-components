@@ -1,4 +1,4 @@
-html {
+body {
   padding-top: 1em;
 }
 
@@ -20,4 +20,5 @@ body {
   left: 0;
   height: 1em;
   width: 25%;
+  display: none;
 }
