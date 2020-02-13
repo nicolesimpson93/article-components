@@ -8,7 +8,6 @@ let $h1copy = document.querySelector('.h1-copy')
 
 
 // STEPS
-
 // FIRST: Test all of the selectors above
 
 // Get the textContent from the <h1>
@@ -20,8 +19,10 @@ let $h1copy = document.querySelector('.h1-copy')
 // Apply opacity 1 to the .h1-copy
 
 // A) Determine the scrollY of the window when the element is scrolled out of view
-// B) Determine how this would be done by looking at the "Properies of the h1"
+// B) Determine how this would be done by looking at the "Properties of the h1"
 
 // if (heading is "in view") by checking how much has scrolled
 
 // else (heading is NOT "in view") by checking how much has scrolled
+
+// Capture the 'scroll' of the window
