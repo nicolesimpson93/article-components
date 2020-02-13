@@ -1,39 +1,27 @@
 // DOCUMENT REFERENCES
 let $doc = document.documentElement
 let $win = window
-let $bar = document.querySelector('.progress-bar')
+let $bar = document.querySelector('.bar')
+let $prog = document.querySelector('.progress')
+let $h1 = document.querySelector('#heading')
+let $h1copy = document.querySelector('.h1-copy')
 
 
-// EXECUTION
+// STEPS
 
-// Listen for the window to scroll
-$win.addEventListener('scroll', event => { 
-  
-  // Height of the window (without scroll bars)
-  let winH = $doc.clientHeight 
+// FIRST: Test all of the selectors above
 
-  // Height of the document (html page)
-  let docH = $doc.scrollHeight 
+// Get the textContent from the <h1>
 
-  // if (docH is less than winH), hide the progress-bar
-  if (docH <= winH) {
-    // "None" the .progress-bar display
-    $bar.style.display = 'none'
-  } else {
-    // "Block" the .progress-bar display
-    $bar.style.display = 'block'
-  }
+// Put some textContent into the .h1-copy
 
-  // Determine how much CAN be scrolled
-  let canBeScrolled = docH - winH
+// Apply opacity 0 to the .h1-copy
 
-  // Determine how much HAS been scrolled
-  let hasBeenScrolled = $win.scrollY
+// Apply opacity 1 to the .h1-copy
 
-  // What percentage of the page has been scrolled
-  let percentScrolled = hasBeenScrolled / canBeScrolled
+// A) Determine the scrollY of the window when the element is scrolled out of view
+// B) Determine how this would be done by looking at the "Properies of the h1"
 
-  // Convert scrolled % out of 100 and apply to the width of .progress-bar
-  $bar.style.width = `${percentScrolled * 100}%`
+// if (heading is "in view") by checking how much has scrolled
 
-})
+// else (heading is NOT "in view") by checking how much has scrolled
