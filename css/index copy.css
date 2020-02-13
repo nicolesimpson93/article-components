@@ -17,10 +17,19 @@ body {
   left: 0;
   height: 1em;
   width: 100%;
+  box shadow: 0 1em 1em rgba(0,0,0,0.5)
 }
 
 .progress{
   background-color: limegreen;
   width: 40%;
   height: 100%;
+}
+
+.h1copy{
+  position: absolute;
+  top: 0;
+  left: 0;
+  line-height: 2;
+  padding-left: 1em;
 }
