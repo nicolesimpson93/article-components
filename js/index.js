@@ -33,7 +33,4 @@ let percentageScrolled = hasBeenScrolled / canBeScrolled
 //Apply a % of the $bar width 
 $bar.style.width = `${percentageScrolled * 100}%`
 //Capture the scroll of the window
-
-
-
-$bar.style.display
+$win .addEventListener (`scroll`, event => { console.log (`scroll`) })
